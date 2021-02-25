@@ -12,7 +12,7 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     int dx = x1 - x0; //delta x
     int d, A, B;
     if (x1 < x0) {
-		x = x1;
+	x = x1;
         y = y1;
         x1 = x0;
         y1 = y0;
