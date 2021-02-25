@@ -11,14 +11,15 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     int dy = y1 - y0; //delta y
     int dx = x1 - x0; //delta x
     int d, A, B;
-    if (x1 < x0) {
+    //swap the coords
+    if (x1 < x0){
 	x = x1;
         y = y1;
         x1 = x0;
         y1 = y0;
         dx *= -1;
         dy *= -1;
-	}
+    }
     //m = 0
     if(dy == 0){
         while(x < x1){
